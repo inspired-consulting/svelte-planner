@@ -1,0 +1,19 @@
+{
+  "name": "svelte-planner",
+  "version": "1.0.0",
+  "description": "Demo for svelte.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Tigges",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/router": "^9.3.1",
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-pug": "^4.0.4",
+    "koa-session": "^6.0.0"
+  }
+}
