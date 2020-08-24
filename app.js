@@ -14,7 +14,7 @@ const pug = new Pug({
 // Configure routes
 
 router
-    .get('/', async ctx => await ctx.render('dashboard'))
+    .get('/', ctx => ctx.render('dashboard'))
 
 app.use(router.routes());
 
