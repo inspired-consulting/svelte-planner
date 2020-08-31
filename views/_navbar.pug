@@ -1,0 +1,18 @@
+mixin navbarName(currentLink)
+    nav.navbar.navbar-expand-md.navbar-light.bg-light
+        a.navbar-brand(href='#')
+            img(src='http://localhost:3000/Logo2.png',alt='Svelte Project Planner', style='width:100px')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav')
+            span.navbar-toggler-icon
+
+        div.collapse.navbar-collapse(id='navbarNav')
+            ul.navbar-nav
+                li.nav-item(class="Home" === currentLink ? "active" : null)
+                    a.nav-link(href='/') Home
+                li.nav-item(class="Projects" === currentLink ? "active" : null)
+                    a.nav-link(href='/project') Projects
+                li.nav-item(class="Persons" === currentLink ? "active" : null)
+                    a.nav-link(href='/person') Persons
+                li.nav-item(class="Clients" === currentLink ? "active" : null)
+                    a.nav-link(href='/client') Clients
+            button.btn.btn-light(href='#')
