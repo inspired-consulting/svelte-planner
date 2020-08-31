@@ -16,6 +16,7 @@ const pug = new Pug({
 router
     .get('/', ctx => ctx.render('dashboard'))
     .get('/person', ctx => ctx.render('person'))
+    .get('/project', ctx => ctx.render('project'))
 
 app.use(router.routes());
 
