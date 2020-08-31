@@ -17,6 +17,7 @@ router
     .get('/', ctx => ctx.render('dashboard'))
     .get('/person', ctx => ctx.render('person'))
     .get('/project', ctx => ctx.render('project'))
+    .get('/client', ctx => ctx.render('client'))
 
 app.use(router.routes());
 
