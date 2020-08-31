@@ -4,8 +4,10 @@ block content
 
     nav.navbar.navbar-expand-md.navbar-light.bg-light
         a.navbar-brand(href='#') Svelte Project Planner
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav')
+            span.navbar-toggler-icon
 
-        div.collapse.navbar-collapse
+        div.collapse.navbar-collapse(id='navbarNav')
             ul.navbar-nav
                 li.nav-item.active
                     a.nav-link(href='#') Home
