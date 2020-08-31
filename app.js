@@ -1,5 +1,6 @@
 require('dotenv').config()
 const Koa = require('koa');
+const serve = require('koa-static');
 const path = require('path')
 const Pug = require('koa-pug')
 const router = require('@koa/router')();
@@ -10,6 +11,8 @@ const pug = new Pug({
     viewPath: path.resolve(__dirname, './views'),
     app: app
 })
+
+app.use(serve(__dirname + '/images'));
 
 // Configure routes
 
