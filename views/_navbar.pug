@@ -6,13 +6,13 @@ mixin navbarName(currentLink)
             span.navbar-toggler-icon
 
         div.collapse.navbar-collapse(id='navbarNav')
-            ul.navbar-nav
-                li.nav-item(class="Home" === currentLink ? "active" : null)
-                    a.nav-link(href='/') Home
-                li.nav-item(class="Projects" === currentLink ? "active" : null)
-                    a.nav-link(href='/project') Projects
-                li.nav-item(class="Persons" === currentLink ? "active" : null)
-                    a.nav-link(href='/person') Persons
-                li.nav-item(class="Clients" === currentLink ? "active" : null)
-                    a.nav-link(href='/client') Clients
-            button.btn.btn-light(href='#')                    i(class="material-icons") add
+            button.btn.btn-light(href='#')                    i(class="material-icons") add            div.d-flex.mr-auto
+                ul.navbar-nav
+                    li.nav-item(class="Home" === currentLink ? "active" : null)
+                        a.nav-link(href='/') Home
+                    li.nav-item(class="Projects" === currentLink ? "active" : null)
+                        a.nav-link(href='/project') Projects
+                    li.nav-item(class="Persons" === currentLink ? "active" : null)
+                        a.nav-link(href='/person') Persons
+                    li.nav-item(class="Clients" === currentLink ? "active" : null)
+                        a.nav-link(href='/client') Clients
