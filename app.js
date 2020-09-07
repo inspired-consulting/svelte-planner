@@ -21,6 +21,9 @@ router
     .get('/person', ctx => ctx.render('person'))
     .get('/project', ctx => ctx.render('project'))
     .get('/client', ctx => ctx.render('client'))
+    .get('/personAdd', ctx => ctx.render('personAdd'))
+    .get('/projectAdd', ctx => ctx.render('projectAdd'))
+    .get('/clientAdd', ctx => ctx.render('clientAdd'))
 
 app.use(router.routes());
 
