@@ -19,5 +19,13 @@ mixin navbarName(currentLink)
             div.d-flex.float-right
                 a.nav-item.nav-link(href='#', style='color:marinblue') Login
             div.d-flex.align-self-stretch.float-right
-                button.btn.btn-dark.btn-sm(href='#')
+                button.btn.btn-dark.btn-sm(data-toggle='collapse', data-target='#dropdownList')
                     i(class="material-icons") add
+    div.collapse.float-right.mr-2(id='dropdownList')
+        ul(class="sub-menu")
+            li(class="menu-item")
+                a(href='#') Menu item
+            li(class="menu-item")
+                a(href='#') Menu item
+            li(class="menu-item")
+                a(href='#') Menu item
