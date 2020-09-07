@@ -19,13 +19,15 @@ mixin navbarName(currentLink)
             div.d-flex.float-right
                 a.nav-item.nav-link(href='#', style='color:marinblue') Login
             div.d-flex.align-self-stretch.float-right
-                button.btn.btn-dark.btn-sm(data-toggle='collapse', data-target='#dropdownList')
-                    i(class="material-icons") add
-    div.collapse.float-right.mr-2(id='dropdownList')
-        ul(class="sub-menu")
-            li(class="menu-item")
-                a(href='#') Menu item
-            li(class="menu-item")
-                a(href='#') Menu item
-            li(class="menu-item")
-                a(href='#') Menu item
+                if(currentLink==="Person"| currentLink==="Project" | currentLink==="Client")
+                    button.btn.btn-primary.btn-sm.active(data-toggle='collapse', data-target='#dropdownList')
+                        i(class="material-icons") add
+                else
+                    button.btn.btn-dark.btn-sm(data-toggle='collapse', data-target='#dropdownList')
+                        i(class="material-icons") add
+                div.collapse.float-right(id='dropdownList')
+                    div.card.bg-dark(style="width: 18 rem;")
+                        div.text-white.card-body
+                            a.card-link(href='/projectAdd', style='color:white') Project
+                            a.card-link(href='/personAdd', style='color:white') Person
+                            a.card-link(href='/clientAdd', style='color:white') Client
